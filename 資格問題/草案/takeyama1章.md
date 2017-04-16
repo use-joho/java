@@ -44,3 +44,13 @@ class Test{
 
 
 `答え：4`
+
+
+# ファイルの実行
+
+次のコマンドでコンパイル及び実行可能なJavaファイルを作成してください。
+
+```bash
+javac Sample.java
+javac Test
+```
