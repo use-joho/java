@@ -16,7 +16,7 @@
 
 次のコードを確認してください。
 
-'ソースファイル名： Sample.java'
+`ソースファイル名： Sample.java`
 ```java
 class Test{
 	public void main (String[] args){
@@ -41,7 +41,7 @@ class Test{
 以下のような出力結果となるJavaファイルを作成してください。
 ```bash
 javac Sample.java
-javac Test
+java Test
 あいうえお
 かきくけこ
 ```
