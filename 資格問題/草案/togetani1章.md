@@ -7,9 +7,9 @@
 1. System.out.println(100);
 1. System.out.println('100');
 1. System.out.println(あいうえお);
+```
 
 `答え：1,2`
-```
 
 
 # ファイルの実行
