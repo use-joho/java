@@ -1,7 +1,7 @@
 
 # ファイルのコンパイル
 
-画面に出力するコードとして正しいものはどれですか。１つ選択してください。
+画面に出力するコードとして正しいものはどれですか。2つ選択してください。
 ```
 1. System.out.println("あいうえお");
 1. System.out.println(100);
@@ -14,10 +14,10 @@
 
 # ファイルの実行
 
-```次のコードを確認してください。
+次のコードを確認してください。
 
 'ソースファイル名： Sample.java'
-java
+```java
 class Test{
 	public void main (String[] args){
 		System.out.println("Hello");
