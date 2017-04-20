@@ -2,12 +2,12 @@
 # ファイルのコンパイル
 
 画面に出力するコードとして正しいものはどれですか。2つ選択してください。
-```
+
 1. System.out.println("あいうえお");
 1. System.out.println(100);
 1. System.out.println('100');
 1. System.out.println(あいうえお);
-```
+
 
 `答え：1,2`
 
@@ -40,8 +40,8 @@ class Test{
 
 以下のような出力結果となるJavaファイルを作成してください。
 ```bash
-javac Sample.java
-java Test
+> javac Sample.java
+> java Test
 あいうえお
 かきくけこ
 ```
