@@ -1,0 +1,70 @@
+# オーバライドのルール１
+
+次のコードを確認してください。
+
+`ソースファイル名： Sample.java`
+```java
+class ParentTest {
+	protected int runnnig(int x) {
+	 	return 0;
+	 }
+}
+class ChildTest{
+	// ここにコードを挿入
+}
+```
+「ここにコードを挿入」の位置に挿入する有効なコードはどれですか。2つ選択してください。
+
+1.int runnnig(int x) { return 1};
+1.public int runnnig(int x) { return 0};
+1.protected int runnnig(int x) { return 0};
+1.private runnnig(int x) { return 1};
+
+
+
+`答え：1,3`
+
+解説：オーバーライドする場合、アクセス修飾子はオーバライドするメソッドよりも広い公開範囲でなければならない。
+
+# オーバライドのルール２
+
+次のコードを確認してください。
+
+`ソースファイル名： Sample.java`
+```java
+
+class ParentTest1 {
+	public int runnnig(int x) {
+	 	return 0;
+	 }
+}
+class ChildTest1 Exstends ParentTest1{
+	public int runnnig(int x) {
+	 	return 1;
+	 }
+
+}
+
+class ParentTest2 {
+	public ParentTest1 working(){
+		ParentTest1 a = new ParentTest1();
+		return a;
+}
+
+class childTest2 {
+	// ここにコードを挿入
+}
+
+```
+「ここにコードを挿入」の位置に挿入する有効なコードはどれですか。2つ選択してください。
+
+1.public ParentTest2 working() { ParentTest1 b = new ParentTest1(); return b; };
+1.public ChildTest2 working() {ChildTest1 b = new ChildTest1(); return b;};
+1.public int working() { return 1};
+1.puvlic void woriking() {};
+
+
+
+`答え：1,2`
+
+解説：オーバライドする場合、戻り値はオーバライドするメソッドと同じかそのサブクラスのみ可能。
