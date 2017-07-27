@@ -16,7 +16,8 @@
 ```
 > java Sample
 あなたの年齢は？→20
-あなたは成人です！
+あなたの名前は？→ユース太郎
+ユース太郎さんは成人です！
 ```
 
 ```java
@@ -24,15 +25,19 @@ import java.util.Scanner; // 重要です
 
 class Sample{
 	public static void main(String[] args){
-
-		System.out.print("あなたの年齢は？→");
+		
 		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("あなたの年齢は？→");
 		int inputAge = sc.nextInt(); // これでユーザーから数値を受け取れます
+		
+		System.out.print("あなたの名前は？→");
+		String inputName = sc.next(); // これでユーザーから文字列を受け取れます
 
 		if( inputAge >= 20 ){
-			System.out.println("あなたは成人です");
+			System.out.println(inputName + "さんは成人です");
 		}else{
-			System.out.println("あなたは成人ではありません");
+			System.out.println(inputName + "さんは成人ではありません");
 		}
 	}
 }
